@@ -1,0 +1,36 @@
+$ npm install react-typed --save
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! 
+npm ERR! While resolving: portfolio-project@0.1.0
+npm ERR! Found: react@18.2.0
+npm ERR! node_modules/react
+npm ERR!   react@"^18.2.0" from the root project
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peer react@"^16.3.0" from react-typed@1.2.0
+npm ERR! node_modules/react-typed
+npm ERR!   react-typed@"*" from the root project
+npm ERR!
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR!
+npm ERR!
+npm ERR! For a full report see:
+npm ERR! C:\Users\yadav rupesh\AppData\Local\npm-cache\_logs\2023-08-13T05_47_36_118Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\yadav rupesh\AppData\Local\npm-cache\_logs\2023-08-13T05_47_36_118Z-debug-0.log
+
+/************************ Solution *********************/
+
+1. npm config set legacy-peer-deps true
+
+                    OR 
+
+2. npm i react-typed --legacy-peer-deps 
+
+                    OR 
+
+3. npm i react-typed --force
